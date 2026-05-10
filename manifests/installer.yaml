@@ -1,0 +1,10 @@
+AddonId: PlayniteMcpServer_c19604f7-f5a1-4ee1-9f85-db1df598a1c5
+Packages:
+  - Version: 0.1.0
+    RequiredApiVersion: 6.15.0
+    ReleaseDate: 2026-05-10
+    PackageUrl: https://github.com/nonnname/playnite-mcp/releases/download/v0.1.0/PlayniteMcpServer_c19604f7-f5a1-4ee1-9f85-db1df598a1c5_0_1_0.pext
+    Changelog:
+      - Initial release.
+      - Adds a local Streamable HTTP MCP endpoint at http://127.0.0.1:8977/mcp.
+      - Adds tools to list, search, and launch games from the local Playnite library.

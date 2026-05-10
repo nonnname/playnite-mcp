@@ -1,0 +1,14 @@
+AddonId: PlayniteMcpServer_c19604f7-f5a1-4ee1-9f85-db1df598a1c5
+Type: Generic
+Name: Playnite MCP Server
+Author: nonnname
+ShortDescription: Exposes a local MCP server for listing, searching, and launching Playnite games.
+InstallerManifestUrl: https://raw.githubusercontent.com/nonnname/playnite-mcp/main/manifests/installer.yaml
+SourceUrl: https://github.com/nonnname/playnite-mcp
+Description: >
+  Playnite MCP Server exposes a local Streamable HTTP MCP endpoint from Playnite.
+  MCP clients can list games, search the local Playnite library, and launch games through
+  Playnite's official plugin API.
+Tags: ["mcp", "automation", "launcher", "tools"]
+Links:
+  GitHub: https://github.com/nonnname/playnite-mcp

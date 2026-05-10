@@ -1,10 +1,11 @@
 AddonId: PlayniteMcpServer_c19604f7-f5a1-4ee1-9f85-db1df598a1c5
 Packages:
-  - Version: 0.2.0
+  - Version: 0.2.1
     RequiredApiVersion: 6.15.0
     ReleaseDate: 2026-05-10
-    PackageUrl: https://github.com/nonnname/playnite-mcp/releases/download/v0.2.0/PlayniteMcpServer_c19604f7-f5a1-4ee1-9f85-db1df598a1c5_0_2_0.pext
+    PackageUrl: https://github.com/nonnname/playnite-mcp/releases/download/v0.2.1/PlayniteMcpServer_c19604f7-f5a1-4ee1-9f85-db1df598a1c5_0_2_1.pext
     Changelog:
+      - Normalizes list response field names to lower-case JSON keys.
       - Adds filters, pagination, and sorting for game listing and search.
       - Adds game detail lookup by id or name.
       - Adds safe launch by unambiguous game name, with candidate suggestions for ambiguous names.

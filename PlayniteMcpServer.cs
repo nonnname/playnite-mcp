@@ -511,7 +511,7 @@ namespace PlayniteMcpServer
                 Limit = 100,
                 Offset = 0,
                 SortBy = "name"
-            }).Games);
+            }).games);
         }
 
         private object GetGameList(Dictionary<string, object> arguments, bool requireQuery)
@@ -575,10 +575,10 @@ namespace PlayniteMcpServer
 
             return new GameListResult
             {
-                Games = page,
-                Total = filtered.Count,
-                Limit = options.Limit,
-                Offset = options.Offset
+                games = page,
+                total = filtered.Count,
+                limit = options.Limit,
+                offset = options.Offset
             };
         }
 
@@ -898,10 +898,10 @@ namespace PlayniteMcpServer
 
         private class GameListResult
         {
-            public object[] Games { get; set; }
-            public int Total { get; set; }
-            public int Limit { get; set; }
-            public int Offset { get; set; }
+            public object[] games { get; set; }
+            public int total { get; set; }
+            public int limit { get; set; }
+            public int offset { get; set; }
         }
 
         private class BridgeResponse

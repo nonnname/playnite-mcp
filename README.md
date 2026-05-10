@@ -12,9 +12,59 @@ Launching games is only exposed through the MCP `tools/call` endpoint. There is 
 
 ## MCP Tools
 
-- `playnite_list_games`: list up to 100 games.
-- `playnite_search_games`: search games by name.
-- `playnite_launch_game`: launch a game by Playnite database GUID.
+- `playnite_list_games`: list games with filters, sorting, limit, and offset.
+- `playnite_search_games`: search games by name with the same filters as listing.
+- `playnite_get_game`: get detailed game information by id or name.
+- `playnite_launch_game`: launch a game by id or by unambiguous name.
+
+### Filtering
+
+`playnite_list_games` and `playnite_search_games` support:
+
+- `query`: optional text search by game name.
+- `installedOnly`: only installed games.
+- `runningOnly`: only running games.
+- `launchingOnly`: only games currently launching.
+- `favoriteOnly`: only favorite games.
+- `includeHidden`: include hidden games, defaults to `true`.
+- `limit`: result page size, defaults to `100`, maximum `200`.
+- `offset`: number of matching games to skip.
+- `sortBy`: `name`, `lastActivity`, `playtime`, or `added`.
+
+`playnite_launch_game` supports:
+
+- `id`: Playnite game database GUID.
+- `name`: game name to resolve when `id` is not provided.
+- `preferInstalled`: prefer installed matches when resolving by name, defaults to `true`.
+- `exactMatch`: require exact name match when resolving by name, defaults to `false`.
+
+If a name matches multiple games, the server returns candidates and does not launch anything.
+
+## Example Prompts
+
+```text
+Show my installed Playnite games.
+```
+
+```text
+Find installed games with Diablo in the title.
+```
+
+```text
+Launch Diablo IV from Playnite.
+```
+
+```text
+Show my 20 most recently played games.
+```
+
+```text
+Get details for Baldur's Gate 3.
+```
+
+```text
+List my favorite installed games sorted by playtime.
+```
 
 ## MCP Client URL
 

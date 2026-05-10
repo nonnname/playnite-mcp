@@ -1,7 +1,7 @@
 Id: PlayniteMcpServer_c19604f7-f5a1-4ee1-9f85-db1df598a1c5
 Name: Playnite MCP Server
 Author: nonnname
-Version: 0.1.0
+Version: 0.2.0
 Module: PlayniteMcpServer.dll
 Type: GenericPlugin
 Links:

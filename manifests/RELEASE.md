@@ -28,13 +28,13 @@ Before the GitHub Release asset exists, use `-SkipVerify` to create the `.pext` 
 4. Upload the generated `.pext` to:
 
 ```text
-https://github.com/nonnname/playnite-mcp/releases/tag/v0.1.0
+https://github.com/nonnname/playnite-mcp/releases/tag/v0.2.0
 ```
 
 Expected package name:
 
 ```text
-PlayniteMcpServer_c19604f7-f5a1-4ee1-9f85-db1df598a1c5_0_1_0.pext
+PlayniteMcpServer_c19604f7-f5a1-4ee1-9f85-db1df598a1c5_0_2_0.pext
 ```
 
 5. If the asset name differs, update `PackageUrl` in `installer.yaml`.
